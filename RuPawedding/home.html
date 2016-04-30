@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Rutwik weds Parul</title>
 	<link rel = "icon" type = "image/png" href = "Images/goldhearts.png"/>
-	<link rel = "stylesheet" type="text/css" href="css/rutwikparul.css"/>
+	<link rel = "stylesheet" type="text/css" href="css/rutwikparul2.css"/>
+	
 </head>
 <body>
 
@@ -15,41 +16,32 @@
 	<h3> 24th December 2016 </h3>
 	
 </header>
+	<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+
+	<div class="dropdown">
+<!--<button onclick="myFunction()" class="dropbtn">Menu</button>-->
+  <div id="myDropdown" class="dropdown-content">
+		<a href = "home.html"> Home </a>
+		<a href = "aboutus.html"> About Us </a>
+		<a href = "prewedding.html"> Pre-wedding events </a> 
+		<a href = "wedding.html"> Wedding </a>
+		<a href = "reception.html"> Reception </a>
+		<a href = "albums.html"> Albums </a>
+		<a href = "testimonials.html"> Testimonials </a> 
+		<a href = "rsvp.html"> RSVP </a>
+		<a href = "contacts.html"> Contacts </a>
+  </div>
+</div>
+</div>
 	
-	<aside class = "left">
-	<nav>
-		<ul>
-		<li><a class= "active" href = "home.html"> Home </a></li>
-		<li><a href = "aboutus.html"> About Us </a></li>
-		<li><a href = "prewedding.html"> Pre-wedding events </a></li> 
-		<li><a href = "wedding.html"> Wedding </a></li> 
-		<li><a href = "reception.html"> Reception </a></li> 
-		<li><a href = "albums.html"> Albums </a></li> 
-		<li><a href = "testimonials.html"> Testimonials </a></li> 
-		<li><a href = "rsvp.html"> RSVP </a></li> 
-		<li><a href = "contacts.html"> Contacts </a></li>
-		</ul>
-	</nav>
-	</aside>
 	
 
 
-<section class = "coverright">
-<!--<h2 class="coverpage"> Parul & Rutwik </h2>
-<h3> 24th December 2016 </h3>-->
+<!--<section class = "coverright">
 
-	<!--<figcaption class="top"> 24th December 2016 </figcaption>-->
-	
-	<!--<a class= "active" href = "home.html"> Home </a> &nbsp;
-		<a href = "aboutus.html"> About Us </a> &nbsp;
-		<a href = "prewedding.html"> Pre-wedding events </a>&nbsp;
-		<a href = "wedding.html"> Wedding </a> &nbsp;
-		<a href = "reception.html"> Reception </a>&nbsp;
-		<a href = "albums.html"> Albums </a>&nbsp;
-		<a href = "testimonials.html"> Testimonials </a>&nbsp;
-		<a href = "rsvp.html"> RSVP </a> &nbsp;
-		<a href = "contacts.html"> Contacts </a>&nbsp;
-		<a href = "thankyou.html"> Thank You</a>&nbsp;-->
 	<figure class="centerpic">
 	<img src="Images\coverpic.JPG" width="30%" alt="CoverPic">
 	
@@ -72,14 +64,57 @@
 </figcaption>
 
 </figure>
-</section>
+</section>-->
+<!--<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>-->
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.container')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
 <footer>
 
 	<p>Designed by Juthika Shetye.<br>
 	All rights reserved.</p>
 	
 </footer>
-	
 </body>
 </html>
