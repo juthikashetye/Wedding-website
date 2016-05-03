@@ -5,7 +5,8 @@
 	<title>Rutwik weds Parul</title>
 	<link rel = "icon" type = "image/png" href = "Images/goldhearts.png"/>
 	<link rel = "stylesheet" type="text/css" href="css/rutwikparul.css"/>
-	
+	<!--For forcing browsers to tell the actual device width of the user-->
+	<meta name = "viewport" content= "width=device-width">
 </head>
 <body>
 
@@ -17,12 +18,12 @@
 	
 </header>
 	<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
 
 	<div class="dropdown">
-<!--<button onclick="myFunction()" class="dropbtn">Menu</button>-->
+
   <div id="myDropdown" class="dropdown-content">
 		<a href = "home.html"> Home </a>
 		<a href = "aboutus.html"> About Us </a>
@@ -37,35 +38,8 @@
 </div>
 </div>
 	
-	
 
-
-<!--<section class = "coverright">
-
-	<figure class="centerpic">
-	<img src="Images\coverpic.JPG" width="30%" alt="CoverPic">
-	
-	<figcaption class="bottom">
-	<script type="text/javascript">
-
-	today = new Date();
-
-	BigDay = new Date("December 24, 2016");
-	msPerDay = 24 * 60 * 60 * 1000 ;
-	timeLeft = (BigDay.getTime() - today.getTime());
-	e_daysLeft = timeLeft / msPerDay;
-	daysLeft = Math.floor(e_daysLeft);
-	e_hrsLeft = (e_daysLeft - daysLeft)*24;
-	hrsLeft = Math.floor(e_hrsLeft);
-	minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
-	document.write( "<h4>" + daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes left for 'D-day'</h4>");
-
-</script>
-</figcaption>
-
-</figure>
-</section>-->
-<!--<script>
+<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -73,28 +47,6 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>-->
-<script>
-function myFunction(x) {
-    x.classList.toggle("change");
-}
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
 window.onclick = function(event) {
   if (!event.target.matches('.container')) {
 
@@ -108,8 +60,8 @@ window.onclick = function(event) {
     }
   }
 }
-
 </script>
+
 <footer>
 
 	<p>Designed by Juthika Shetye.<br>
