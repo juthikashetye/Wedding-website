@@ -8,7 +8,39 @@
 	<!--For forcing browsers to tell the actual device width of the user-->
 	<meta name = "viewport" content= "width=device-width">
 </head>
+
 <body>
+
+<h1>Wedding Events</h1>
+
+<button class="accordion">Pre-wedding Events</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+
+<button class="accordion">Wedding Ceremony</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+	
+<button class="accordion">Reception</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
 	
 <div class="container" onclick="myFunction(this)">
 	<div class="bar1"></div>

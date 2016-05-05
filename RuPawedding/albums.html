@@ -5,40 +5,55 @@
 	<title>Rutwik weds Parul</title>
 	<link rel = "icon" type = "image/png" href = "Images/goldhearts.png"/>
 	<link rel = "stylesheet" type="text/css" href="css/rutwikparul.css"/>
+	<!--For forcing browsers to tell the actual device width of the user-->
+	<meta name = "viewport" content= "width=device-width">
 </head>
 <body>
+	
+<div class="container" onclick="myFunction(this)">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
 
-<header>
+	<div class="dropdown">
 
-	<h1> Celebrate With Us! </h1>
-	<h2> PARUL & RUTWIK </h2>
-	<h3> 24th December 2016 </h3>
-	
-</header>
-	
-	<aside class = "left">
-	
-		<ul>
-		<li><a  href = "home.html"> Home </a></li>
-		<li><a href = "aboutus.html"> About Us </a></li>
-		<li><a href = "prewedding.html"> Pre-wedding events </a></li> 
-		<li><a href = "wedding.html"> Wedding </a></li> 
-		<li><a href = "reception.html"> Reception </a></li> 
-		<li><a class= "active" href = "albums.html"> Albums </a></li> 
-		<li><a href = "testimonials.html"> Testimonials </a></li> 
-		<li><a href = "rsvp.html"> RSVP </a></li> 
-		<li><a href = "contacts.html"> Contacts </a></li>
-		</ul>
-	</nav>
-	</aside>
-	
-<footer>
+		<div id="myDropdown" class="dropdown-content">
+			<a href = "home.html"> Home </a>
+			<a href = "aboutus.html"> About Us </a>
+			<a href = "weddingevents.html"> Wedding Events </a>
+			<a href = "albums.html"> Albums </a>
+			<a href = "testimonials.html"> Testimonials </a> 
+			<a href = "rsvp.html"> RSVP </a>
+			<a href = "contacts.html"> Contacts </a>
+		</div>
+	</div>
+</div>
 
-	<p>Designed by Juthika Shetye.<br>
-	All rights reserved.</p>
-	
-</footer>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.container')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</section>
+
 	
 </body>
 </html>
-	
