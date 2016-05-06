@@ -8,7 +8,7 @@
 	<!--For forcing browsers to tell the actual device width of the user-->
 	<meta name = "viewport" content= "width=device-width">
 </head>
-<body class="homebody">
+<body>
 
 <section class="home">
 <header>
@@ -20,7 +20,7 @@
 </header>
 
 </section>
-	<div class="homecontainer" onclick="myFunction(this)">
+	<div class="container" onclick="myFunction(this)">
 	<div class="bar1"></div>
 	<div class="bar2"></div>
 	<div class="bar3"></div>
@@ -29,12 +29,12 @@
 
   <div id="myDropdown" class="dropdown-content">
 		<a href = "home.html"> Home </a>
-		<a href = "aboutus.html"> About Us </a>
-		<a href = "weddingevents.html"> Wedding Events </a> 
-		<a href = "albums.html"> Albums </a>
-		<a href = "testimonials.html"> Testimonials </a> 
-		<a href = "rsvp.html"> RSVP </a>
-		<a href = "contacts.html"> Contacts </a>
+		<a href = "#aboutus"> About Us </a>
+		<a href = "#weddingevents"> Wedding Events </a> 
+		<a href = "#albums"> Albums </a>
+		<a href = "#testimonials"> Testimonials </a> 
+		<a href = "#rsvp"> RSVP </a>
+		<a href = "#contacts"> Contacts </a>
   </div>
 </div>
 </div>
@@ -48,7 +48,7 @@ function myFunction() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.homecontainer')) {
+  if (!event.target.matches('.container')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -62,7 +62,70 @@ window.onclick = function(event) {
 }
 </script>
 
+<div class="fixed-bg"></div>
+
+<!--<img src="Images/coverpic2.jpg" width= "100%" alt="coverpic"/>-->
+
+<h4 id="aboutus"> About Us </h4>
+
+<figure class="leftimage">
+
+<img  src ="Images/bride.jpg" width = "30%" alt = "bridepic"/>
+<figcaption>
+<p>Parul</p>
+<p>Main pagal hoon</p>
+</figcaption>
+
+</figure>
+
+<figure class="rightimage">
+
+<img src ="Images/groom.jpg" width = "30%" alt = "groompic"/>
+<figcaption>
+<p>Rutwik</p>
+<p>Mi veda ahe </p>
+</figcaption>
+
+</figure>
+
+<h4 id="weddingevents"> Wedding Events </h4>
+
+<button class="accordion">Pre-wedding Events</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+
+<button class="accordion">Wedding Ceremony</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+	
+<button class="accordion">Reception</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
 
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+<h4 id="albums"> Albums </h4>
+<h4 id="testimonials"> Testimonials </h4>
+<h4 id="rsvp"> RSVP </h4>
+
+<section class = "right">
+
+<iframe src="https://docs.google.com/forms/d/1L7SwgCEMK8G3cf10c2WRqbEApSEk_j9C94cGX38bYl0/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<h4 id="contacts"> Contacts </h4>
 </body>
 </html>
