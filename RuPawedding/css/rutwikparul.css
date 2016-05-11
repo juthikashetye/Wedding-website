@@ -7,10 +7,17 @@ body {
 	/*background: -moz-linear-gradient(right, rgba(26,178,255,0), rgba(26,178,255,0.9)); /* For Firefox 3.6 to 15 */
 	/*background: linear-gradient(to right, rgba(26,178,255,0), rgba(26,178,255,0.9)); /* Standard syntax (must be last) */	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	letter-spacing: 2px;
 }
 header {
 	margin:0;
 }
+p {
+	font-size:150%;
+	font-family: Arial;
+	margin-left: 5%;
+	margin-right:5%;
+	}
 nav {
 	color: #000000;
 	text-align: center;
@@ -25,16 +32,21 @@ nav a {
 	text-decoration:none;
 	padding-right: 2%;
 	padding-left: 2%;
-	font-size:150%;
+	font-size:100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#FFFFFF;
 	text-align:center;	
 }
 
 nav a:hover {
-	background-color: rgb(102, 102, 255);
+	background-color: rgb(255, 242, 230);
 	color: #000000;
 }
 
+.active {
+	background-color: rgb(255, 242, 230);
+	color: #000000;
+}
 
 footer {
 	text-align: center;
@@ -42,20 +54,24 @@ footer {
 
 h3 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #000000;
+	color: rgba(0, 0, 51,0.9);
 	font-size:200%;
 	padding:2%;
 }
 
+#aboutus {
+	margin-top: 10%;
+}
 .fixed-bg {
-    background-image: url("../Images/coverpic2.jpg");
-    min-height: 600px;
+	background-color: rgba(0, 0, 51,0.9);
+	background-image: url("../Images/coverpic2.jpg");
+    min-height: 500px;
 	width:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin-top:5%;
+	margin-top:0;
 	z-index: -1;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
@@ -67,7 +83,6 @@ h3 {
 
 .fixed-bg div{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 250%;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 5px;
@@ -76,6 +91,14 @@ h3 {
   
 }	
 
+.headings h1{
+	font-size: 300%;
+	
+}
+
+.headings h2{
+	font-size:200%;
+}
 
 figure {
 	display: inline-block;
@@ -99,7 +122,8 @@ figure {
 	clear:both	
 }
 
-.eventsfixedbg {
+.weddingfixedbg {
+	background-color: rgba(0, 0, 51,0.9);
 	background-image: url("../Images/rupapic1.jpg");
     min-height: 500px;
 	width:100%;
@@ -116,9 +140,9 @@ figure {
     align-items: center;
 }
 
-.eventsfixedbg h3{
+.weddingfixedbg h3{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 400%;
+	font-size: 300%;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 10px;
@@ -128,6 +152,7 @@ figure {
 }	
 
 .rsvpfixedbg {
+	background-color: rgba(0, 0, 51,0.9);
 	background-image: url("../Images/rupapic5.jpg");
     min-height: 400px;
 	width:100%;
@@ -146,7 +171,7 @@ figure {
 
 .rsvpfixedbg h3{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 400%;
+	font-size: 300%;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 10px;
@@ -156,8 +181,136 @@ figure {
 }	
 
 #rsvp p {
-	font-size: 200%;
+	font-size: 150%;
 }
+
+
+.storyfixedbg {
+	background-color: rgba(0, 0, 51,0.9);
+	background-image: url("../Images/rupapic5.jpg");
+    min-height: 400px;
+	width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top:5%;
+	z-index: -1;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.storyfixedbg h3{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 300%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 4px #000000;
+	letter-spacing: 10px;
+	-webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1;
+  
+}
+
+.giftsfixedbg {
+	background-color: rgba(0, 0, 51,0.9);
+	background-image: url("../Images/rupapic5.jpg");
+    min-height: 400px;
+	width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top:5%;
+	z-index: -1;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.giftsfixedbg h3{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 300%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 4px #000000;
+	letter-spacing: 10px;
+	-webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1;
+  
+}
+
+.accomodationsfixedbg {
+	background-color: rgba(0, 0, 51,0.9);
+	background-image: url("../Images/rupapic5.jpg");
+    min-height: 400px;
+	width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top:5%;
+	z-index: -1;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.accomodationsfixedbg div{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 4px #000000;
+	letter-spacing: 10px;
+	-webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1;
+  
+}
+
+.accomodations h3{
+	font-size: 300%;
+	color: #FFFFFF;
+}
+
+.accomodations h4{
+	font-size:150%;
+	letter-spacing: 5px;
+}
+.galleryfixedbg {
+	background-color: rgba(0, 0, 51,0.9);
+	background-image: url("../Images/rupapic5.jpg");
+    min-height: 400px;
+	width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top:5%;
+	z-index: -1;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.galleryfixedbg h3{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 300%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 4px #000000;
+	letter-spacing: 10px;
+	-webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1;
+  
+}
+
+
+
 
 button.accordion {
     background-color: #fce5cd;
@@ -208,6 +361,7 @@ div.panel.show {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top:5%;
 }
 
 /* Next & previous buttons */

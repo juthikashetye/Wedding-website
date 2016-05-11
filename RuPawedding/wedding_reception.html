@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rutwik weds Parul</title>
+	<link rel = "icon" type = "image/png" href = "Images/goldhearts.png"/>
+	<link rel = "stylesheet" type="text/css" href="css/rutwikparul.css"/>
+	<!--For forcing browsers to tell the actual device width of the user-->
+	<meta name = "viewport" content= "width=device-width">
+</head>
+<body>
+
+
+<header >
+	<nav>
+		<a href = "home.html"> Parul & Rutwik </a>
+		<a href = "wedding_reception.html"class ="active"> Wedding & Reception </a>
+		<a href = "accomodations.html"> Accomodations </a>
+		<a href = "gallery.html"> Gallery </a>
+		<a href = "gifts.html"> Gifts </a>
+		<a href = "rsvp.html"> RSVP </a>
+	</nav>
+
+</header>
+
+
+<section  id="wedding">
+<div class="weddingfixedbg"> 
+	<h3>Wedding & Reception</h3>
+</div>
+
+<h3> Pre-wedding Events </h3>
+<button class="accordion">Mehendi & Sangeet</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+
+<button class="accordion">Engagement</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+	
+
+<h3> Wedding Day </h3>
+
+<button class="accordion">Haldi</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+
+<button class="accordion">Wedding Ceremony</button>
+	<div class="panel">
+		<p>Some text goes here</p>
+	</div>
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</section>
+
+
+<section  id="reception">
+<div class="eventsfixedbg"> 
+	<h3>Reception</h3>
+</div>
