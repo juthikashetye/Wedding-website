@@ -1,23 +1,21 @@
-
 body {
 	text-align:center;
-	background-color: rgb(255, 242, 230); /* For browsers that do not support gradients */
-	/*background: -webkit-linear-gradient(left, rgba(26,178,255,0), rgba(26,178,255,0.9)); /* For Safari 5.1 to 6.0 */
-	/*background: -o-linear-gradient(right, rgba(26,178,255,0), rgba(26,178,255,0.9)); /* For Opera 11.1 to 12.0 */
-	/*background: -moz-linear-gradient(right, rgba(26,178,255,0), rgba(26,178,255,0.9)); /* For Firefox 3.6 to 15 */
-	/*background: linear-gradient(to right, rgba(26,178,255,0), rgba(26,178,255,0.9)); /* Standard syntax (must be last) */	
+	background-color: rgb(255, 242, 230); 	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	letter-spacing: 2px;
 }
+
 header {
 	margin:0;
 }
+
 p {
 	font-size:150%;
 	font-family: Arial;
 	margin-left: 5%;
 	margin-right:5%;
-	}
+}
+
 nav {
 	color: #000000;
 	text-align: center;
@@ -26,6 +24,7 @@ nav {
 	width:100%;
 	background-color: rgba(0, 0, 51,0.9);
 	margin-top:0;
+	z-index:2;
 }
 
 nav a {
@@ -62,6 +61,13 @@ h3 {
 #aboutus {
 	margin-top: 10%;
 }
+
+/* The animation code for bg images */
+@keyframes appear {
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+
 .fixed-bg {
 	background-color: rgba(0, 0, 51,0.9);
 	background-image: url("../Images/coverpic2.jpg");
@@ -71,13 +77,17 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin-top:0;
+	margin-top:5%;
 	z-index: -1;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
     align-items: center;
+	-webkit-animation-name: appear;
+	-webkit-animation-duration: 5s;
+	animation-name: appear;
+    animation-duration: 5s;
 	
 }
 
@@ -89,7 +99,7 @@ h3 {
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
   
-}	
+}
 
 .headings h1{
 	font-size: 300%;
@@ -108,50 +118,21 @@ figure {
 
 .leftimage{
 	float:left;
-	margin-left:20%;
-	margin-right:1%;
+	margin-left:10%;
+	margin-right:5%;
 }
 
 .rightimage{
 	float:right;
-	margin-left:1%;
-	margin-right:20%;
+	margin-left:5%;
+	margin-right:10%;
 }
 
 #weddingevents {
 	clear:both	
 }
 
-.weddingfixedbg {
-	background-color: rgba(0, 0, 51,0.9);
-	background-image: url("../Images/rupapic1.jpg");
-    min-height: 500px;
-	width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin-top:5%;
-	z-index: -1;
-	text-align: center;
-	display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
-}
-
-.weddingfixedbg h3{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 300%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
-	-webkit-flex: 1; /* Safari 6.1+ */
-   flex: 1;
-  
-}	
-
-.rsvpfixedbg {
+.weddingfixedbg , .rsvpfixedbg, .storyfixedbg, .giftsfixedbg, .accomodationsfixedbg, .galleryfixedbg{
 	background-color: rgba(0, 0, 51,0.9);
 	background-image: url("../Images/rupapic5.jpg");
     min-height: 400px;
@@ -167,9 +148,13 @@ figure {
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
     align-items: center;
+	-webkit-animation-name: appear;
+	-webkit-animation-duration: 5s;
+	animation-name: appear;
+    animation-duration: 5s;
 }
 
-.rsvpfixedbg h3{
+.weddingfixedbg h3, .rsvpfixedbg h3, .storyfixedbg h3, .giftsfixedbg h3, .galleryfixedbg h3{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 300%;
 	color: #FFFFFF;
@@ -182,83 +167,6 @@ figure {
 
 #rsvp p {
 	font-size: 150%;
-}
-
-
-.storyfixedbg {
-	background-color: rgba(0, 0, 51,0.9);
-	background-image: url("../Images/rupapic5.jpg");
-    min-height: 400px;
-	width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin-top:5%;
-	z-index: -1;
-	text-align: center;
-	display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
-}
-
-.storyfixedbg h3{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 300%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
-	-webkit-flex: 1; /* Safari 6.1+ */
-   flex: 1;
-  
-}
-
-.giftsfixedbg {
-	background-color: rgba(0, 0, 51,0.9);
-	background-image: url("../Images/rupapic5.jpg");
-    min-height: 400px;
-	width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin-top:5%;
-	z-index: -1;
-	text-align: center;
-	display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
-}
-
-.giftsfixedbg h3{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 300%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
-	-webkit-flex: 1; /* Safari 6.1+ */
-   flex: 1;
-  
-}
-
-.accomodationsfixedbg {
-	background-color: rgba(0, 0, 51,0.9);
-	background-image: url("../Images/rupapic5.jpg");
-    min-height: 400px;
-	width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin-top:5%;
-	z-index: -1;
-	text-align: center;
-	display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
 }
 
 .accomodationsfixedbg div{
@@ -274,43 +182,15 @@ figure {
 .accomodations h3{
 	font-size: 300%;
 	color: #FFFFFF;
+	
 }
 
 .accomodations h4{
 	font-size:150%;
 	letter-spacing: 5px;
-}
-.galleryfixedbg {
-	background-color: rgba(0, 0, 51,0.9);
-	background-image: url("../Images/rupapic5.jpg");
-    min-height: 400px;
-	width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin-top:5%;
-	z-index: -1;
-	text-align: center;
-	display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
-}
-
-.galleryfixedbg h3{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 300%;
 	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
-	-webkit-flex: 1; /* Safari 6.1+ */
-   flex: 1;
-  
 }
-
-
-
+ 
 
 button.accordion {
     background-color: #fce5cd;
@@ -355,7 +235,6 @@ div.panel.show {
     max-height: 500px;  
 }
 
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -386,6 +265,7 @@ div.panel.show {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 /* Position the "prev button" to the left */
 .prev {
   left: 0;
@@ -450,3 +330,5 @@ div.panel.show {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
