@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Rutwik weds Parul</title>
 	<link rel = "icon" type = "image/png" href = "Images/goldhearts.png"/>
-	<link rel = "stylesheet" type="text/css" href="css/rutwikparul.css"/>
+	<link rel = "stylesheet" type="text/css" href="css/fullsize.css" media="only screen and (min-width:769px)"/>
+	<link rel = "stylesheet" type="text/css" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:768px)"/>
+	<link rel = "stylesheet" type="text/css" href="css/smartphone.css" media="only screen and (max-width:480px)"/>
 	<!--For forcing browsers to tell the actual device width of the user-->
 	<meta name = "viewport" content= "width=device-width">	
 </head>
@@ -12,6 +14,9 @@
 <body>
 
 <header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
 	<nav>
 		<a href = "home.html" class ="active"> Parul & Rutwik </a>
 		<a href = "wedding_reception.html"> Wedding & Reception </a>
@@ -20,6 +25,24 @@
 		<a href = "gifts.html"> Gifts </a>
 		<a href = "rsvp.html"> RSVP </a>
 	</nav>
+	</div>
+	<span  class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()"> 
+<div></div>
+<div></div>
+<div></div>
+</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+	
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
 </header>
 
 
