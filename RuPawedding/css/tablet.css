@@ -1,67 +1,9 @@
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 51);
-	 
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-   color: #FFFFFF;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover{ 
-	color: #FFF000;
-}
-
-a.active {
-	background-color: rgb(255, 242, 230);
-	color: #000000;
-}
-
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 35px !important;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.menu{
-	position:fixed;
-	top:2%;
-	left:2%;
-	z-index:2;
-}
-.menu div {
-    width: 30px;
-    height: 4px;
-    background-color: #000000;
-    margin: 5px 0;
-	
-}
-
 body {
 	text-align:center;
 	background-color: rgb(255, 242, 230); 	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	letter-spacing: 2px;
+	font-size:16px;
 	
 }
 
@@ -69,23 +11,30 @@ header {
 	margin:0;
 }
 
+
 p {
-	font-size:150%;
+	font-size:125%;
 	font-family: Arial;
-	margin-left: 5%;
-	margin-right:5%;
+	padding-left:10%;
+	padding-right:10%;
+	
 }
 
-
-footer {
-	text-align: center;
-}
 
 h3 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: rgba(0, 0, 51,0.9);
-	font-size:200%;
+	font-size:175%;
 	padding:2%;
+}
+
+.headings h1{
+	font-size: 300%;
+	
+}
+
+.headings h2{
+	font-size:200%;
 }
 
 #aboutus {
@@ -107,7 +56,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin-top:5%;
+	margin-top:8%;
 	z-index: -1;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
@@ -122,6 +71,7 @@ h3 {
 }
 
 .fixed-bg div{
+	width:100%;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
@@ -131,17 +81,10 @@ h3 {
   
 }
 
-.headings h1{
-	font-size: 300%;
-	
-}
-
-.headings h2{
-	font-size:200%;
-}
 
 img{
 	width: 100%;
+	
 }
 
 #weddingevents {
@@ -157,7 +100,7 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin-top:5%;
+	margin-top:8%;
 	z-index: -1;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
@@ -170,39 +113,36 @@ img{
     animation-duration: 5s;
 }
 
-.weddingfixedbg h3, .rsvpfixedbg h3, .storyfixedbg h3, .giftsfixedbg h3, .galleryfixedbg h3{
+.weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1, .galleryfixedbg h1{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 300%;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
   
 }	
 
-#rsvp p {
-	font-size: 150%;
-}
 
 .accomodationsfixedbg div{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
   
 }
 
-.accomodations h3{
+.accomodations h1{
 	font-size: 300%;
 	color: #FFFFFF;
 	
 }
 
-.accomodations h4{
-	font-size:150%;
+.accomodations h2{
+	font-size:200%;
 	letter-spacing: 5px;
 	color: #FFFFFF;
 }
@@ -256,6 +196,7 @@ div.panel.show {
 section .images {
 	margin-top: 4%;
 }
+
 
 /* The Image Box */
 div.img {
@@ -387,4 +328,69 @@ div.desc {
     clear: both;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 51);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
+.sidenav a {
+    padding: 10px 8px 10px 32px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+    text-decoration: none;
+	text-align: center;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover{ 
+	color: #FFF000;
+}
+
+a.active {
+	background-color: rgb(255, 242, 230);
+	color: #000000;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu{
+	position:fixed;
+	top:1%;
+	left:2%;
+	z-index:2;
+	background-color: rgba(0, 0, 51,0.8);
+	border: 1px solid #ccc;
+	-moz-border-radius: 10%;
+	-webkit-border-radius: 10%;
+	border-radius: 10%;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.menu div {
+    width: 30px;
+    height: 4px;
+    background-color: #FFFFFF;
+    margin: 5px 5px;
+	
+}

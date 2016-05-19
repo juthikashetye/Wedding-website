@@ -3,6 +3,11 @@ body {
 	background-color: rgb(255, 242, 230); 	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	letter-spacing: 2px;
+	font-size:16px;
+}
+
+section {
+	width:100%;
 }
 
 header {
@@ -10,10 +15,12 @@ header {
 }
 
 p {
-	font-size:150%;
+	font-size:130%;
 	font-family: Arial;
 	margin-left: 5%;
 	margin-right:5%;
+	padding-left:10%;
+	padding-right:10%;
 }
 
 nav {
@@ -58,7 +65,7 @@ footer {
 h3 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: rgba(0, 0, 51,0.9);
-	font-size:200%;
+	font-size:175%;
 	padding:2%;
 }
 
@@ -106,7 +113,7 @@ h3 {
 }
 
 .headings h1{
-	font-size: 300%;
+	font-size: 400%;
 	
 }
 
@@ -158,9 +165,9 @@ figure {
     animation-duration: 5s;
 }
 
-.weddingfixedbg h3, .rsvpfixedbg h3, .storyfixedbg h3, .giftsfixedbg h3, .galleryfixedbg h3{
+.weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1, .galleryfixedbg h1{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 300%;
+	font-size: 350%;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 10px;
@@ -169,28 +176,24 @@ figure {
   
 }	
 
-#rsvp p {
-	font-size: 150%;
-}
-
 .accomodationsfixedbg div{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
   
 }
 
-.accomodations h3{
-	font-size: 300%;
+.accomodations h1{
+	font-size: 350%;
 	color: #FFFFFF;
 	
 }
 
-.accomodations h4{
-	font-size:150%;
+.accomodations h2{
+	font-size:200%;
 	letter-spacing: 5px;
 	color: #FFFFFF;
 }
