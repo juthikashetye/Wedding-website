@@ -194,142 +194,6 @@ div.panel.show {
 }
 
 
-/*Images section in gallery*/
-section .images {
-	margin-top: 4%;
-}
-
-
-/* The Image Box */
-div.img {
-    border: 1px solid #ccc;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div.img:hover {
-    border: 1px solid #777;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-/* The Image */
-div.img img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
-/* Description of Image */
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/* Add Responsiveness */
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0.1)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Responsive Columns */
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-    .modal-content {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
-
-/* Clear Floats */
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -395,4 +259,144 @@ a.active {
     background-color: #FFFFFF;
     margin: 5px 5px;
 	
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	top:50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	left:0;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+	cursor:pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+/*Image slideshow ingallery*/
+
+.mySlides {
+	text-align:center;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+	display:none;
+	display:block;
+	-webkit-border-radius:5%;
+	border-radius:5%;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+
+	position: relative;
+	display: inline-block;
+	float:left;
+	width:75%;
+	margin-top: 5%;
+	margin: auto;
+	margin-left:1%;
+}
+
+/*thumbnail images div in gallery*/
+.w3-row-padding{
+	float:left;
+	display: inline-block;
+	width : 20%;
+	background-color:rgba(0, 0, 51,0.9);
+	-webkit-border-radius:5%;
+	border-radius:5%;
+	margin-top: 5%;
+	margin: auto;*
+	margin-right:0;
+	padding:0;
+	
+}
+
+.galleryfixedbg{
+	clear:both;
+}
+
+/*thumbnail images*/
+.w3-col.s4{
+	cursor:pointer;
+	width:40.33333%;
+	display:inline-block;
+	margin: auto;
+	padding:1%;
+
+}
+
+/*Slideshow + Thumbnail div*/
+.w3-content{
+	width:100%;
+	margin: auto;
+	max-width:100%;
+	margin-top: 5%;
+	
+
+}
+
+.w3-border{
+	border:2px solid #ccc!important;
+	-webkit-border-radius:10%;
+	border-radius:10%;
+}
+
+.w3-border-red{
+	border-color:rgb(170, 20, 9)!important;
+}
+
+.w3-hover-shadow:hover{
+	box-shadow:0 4px 8px 0 rgba(255, 242, 230,0.2),0 6px 20px 0 rgba(255, 242, 230,0.19)!important;
 }
