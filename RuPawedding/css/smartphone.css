@@ -263,6 +263,7 @@ a.active {
 
 
 
+
 /* Next & previous buttons */
 .prev, .next {
 	cursor: pointer;
@@ -270,11 +271,11 @@ a.active {
 	top:0;
 	top:50%;
 	width: auto;
-	padding: 16px;
+	padding: 2%;
 	margin-top: -22px;
 	color: white;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 80%;
 	transition: 0.6s ease;
 	-webkit-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
@@ -296,21 +297,7 @@ a.active {
 .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);
 }
-/* The dots/bullets/indicators */
-.dot {
-	cursor:pointer;
-	height: 13px;
-	width: 13px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-	background-color: #717171;
-}
 /*Image slideshow ingallery*/
 
 .mySlides {
@@ -338,53 +325,45 @@ a.active {
 
 /* Slideshow container */
 .slideshow-container {
-
 	position: relative;
 	display: inline-block;
-	float:left;
-	width:75%;
-	margin-top: 5%;
+	width:100%;
 	margin: auto;
-	margin-left:1%;
+	
 }
 
 /*thumbnail images div in gallery*/
 .w3-row-padding{
-	float:left;
-	display: inline-block;
-	width : 20%;
 	background-color:rgba(0, 0, 51,0.9);
-	-webkit-border-radius:5%;
-	border-radius:5%;
-	margin-top: 5%;
-	margin: auto;*
-	margin-right:0;
-	padding:0;
-	
+	-webkit-border-radius:1%;
+	border-radius:1%;
+	width: 100%;
+    height: 10%;
+    margin: auto;
+    display: block;
+    border: 1px solid #000;
+    overflow: auto;
+    white-space: nowrap;
+	text-align: center;
 }
 
-.galleryfixedbg{
-	clear:both;
-}
 
 /*thumbnail images*/
-.w3-col.s4{
+.w3-row-padding img{
 	cursor:pointer;
-	width:40.33333%;
-	display:inline-block;
+	display:inline;
 	margin: auto;
-	padding:1%;
+	padding:0;
+	margin:1%;
 
 }
 
 /*Slideshow + Thumbnail div*/
 .w3-content{
 	width:100%;
-	margin: auto;
 	max-width:100%;
-	margin-top: 5%;
-	
-
+	margin: auto;
+	margin-top: 2%;
 }
 
 .w3-border{
