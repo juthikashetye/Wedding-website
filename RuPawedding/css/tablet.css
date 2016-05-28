@@ -62,7 +62,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin-top:8%;
+	margin-top:0;
 	z-index: -1;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
@@ -89,15 +89,13 @@ h3 {
 
 
 img{
-	width: 100%;
+	width: 30%;
 	
 }
 
-#weddingevents {
-	clear:both	
-}
 
-.weddingfixedbg , .rsvpfixedbg, .storyfixedbg, .giftsfixedbg, .accomodationsfixedbg, .galleryfixedbg{
+
+.weddingfixedbg , .rsvpfixedbg, .storyfixedbg, .giftsfixedbg, .accomodationsfixedbg,.accomodationsfixedbg, .galleryfixedbg{
 	background-color: rgba(0, 0, 51,0.9);
 	background-image: url("../Images/rupapic5.jpg");
     min-height: 400px;
@@ -106,7 +104,7 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	margin-top:8%;
+	margin-top:0;
 	z-index: -1;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
@@ -119,7 +117,7 @@ img{
     animation-duration: 5s;
 }
 
-.weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1, .galleryfixedbg h1{
+.weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1,.accomodationsfixedbg h1, .galleryfixedbg h1{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 300%;
 	font-weight:100;
@@ -130,24 +128,6 @@ img{
    flex: 1;
   
 }	
-
-
-.accomodationsfixedbg div{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
-	letter-spacing: 5px;
-	-webkit-flex: 1; /* Safari 6.1+ */
-   flex: 1;
-  
-}
-
-.accomodations h1{
-	font-size: 300%;
-	color: #FFFFFF;
-	font-weight:100;
-	
-}
 
 
 button.accordion {
@@ -379,3 +359,4 @@ a.active {
 .w3-hover-shadow:hover{
 	box-shadow:0 4px 8px 0 rgba(255, 242, 230,0.2),0 6px 20px 0 rgba(255, 242, 230,0.19)!important;
 }
+
