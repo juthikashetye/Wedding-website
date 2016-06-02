@@ -20,7 +20,7 @@ header {
 
 p {
 	font-size:130%;
-	font-family: Arial;
+	font-family: 'Milonga', cursive;
 	margin-left: 5%;
 	margin-right:5%;
 	padding-left:10%;
@@ -67,9 +67,9 @@ footer {
 }
 
 h3 {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Lobster Two', cursive;
 	color: rgba(0, 0, 51,0.9);
-	font-size:175%;
+	font-size:185%;
 	padding:2%;
 }
 
@@ -107,13 +107,13 @@ h3 {
 }
 
 .fixed-bg div{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Rye', cursive;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
-  
+	
 }
 
 
@@ -176,7 +176,7 @@ figure {
 }
 
 .weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1,.accomodationsfixedbg h1, .galleryfixedbg h1{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Rye', cursive;
 	font-size: 400%;
 	font-weight:100;
 	color: #FFFFFF;
@@ -330,7 +330,7 @@ div.panel.show {
 /*Slideshow + Thumbnail div*/
 .w3-content{
 	width:100%;
-	max-width:70%;
+	max-width:65%;
 	margin: auto;
 	margin-top: 2%;
 }
