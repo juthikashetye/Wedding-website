@@ -140,7 +140,7 @@ h3 {
 }
 
 .fixed-bg div{
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Milonga', cursive;
 	color: #FFFFFF;
 	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 15px;
@@ -151,14 +151,15 @@ h3 {
 
 
 .headings h1{
-	font-size: 400%;
-	font-weight:600;
+	font-size: 450%;
+	font-weight:400;
+	font-variant: small-caps;
 	
 }
 
 .headings h2{
 	font-size:200%;
-	font-weight:600;
+	font-weight:400;
 	font-variant: small-caps;
 	
 }
@@ -213,6 +214,7 @@ figure {
 	font-family: 'Cinzel Decorative', cursive;
 	font-size: 400%;
 	font-weight:600;
+	font-variant: small-caps;
 	color: #FFFFFF;
 	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 15px;
@@ -338,7 +340,7 @@ div.panel.show {
 
 /*thumbnail images div in gallery*/
 .w3-row-padding{
-	background-color:rgba(0, 0, 51,0.9);
+	background-color: #000000;
 	-webkit-border-radius:1%;
 	border-radius:1%;
 	width: 90%;
@@ -359,6 +361,7 @@ div.panel.show {
 	margin: auto;
 	padding:0;
 	margin:1%;
+	
 
 }
 

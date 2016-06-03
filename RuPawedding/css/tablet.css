@@ -15,10 +15,44 @@ header {
 	margin:0;
 }
 
+footer {
+	text-align: center;
+	background-color: rgba(0, 0, 51,0.9);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#FFFFFF;
+	padding-left:0;
+	padding-right:0;
+	padding-top:2%;
+	padding-bottom:2%;
+	margin-top:5%;
+	margin-left:0;
+	margin-right:0;
+}
+
+footer p:first-child {
+	font-size:100%;
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
+
+footer p:last-child {
+	
+	font-size:80%;
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
 
 p {
-	font-size:125%;
-	font-family: Arial;
+	font-size:135%;
+	font-family: "Calibri", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-left:10%;
 	padding-right:10%;
 	
@@ -26,22 +60,14 @@ p {
 
 
 h3 {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-variant: small-caps;
 	color: rgba(0, 0, 51,0.9);
-	font-size:175%;
+	font-size:185%;
 	padding:2%;
 }
 
-.headings h1{
-	font-size: 300%;
-	font-weight:100;
-	
-}
 
-.headings h2{
-	font-size:200%;
-	font-weight:100;
-}
 
 #aboutus {
 	margin-top: 10%;
@@ -78,15 +104,27 @@ h3 {
 
 .fixed-bg div{
 	width:100%;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Milonga', cursive;
 	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
   
 }
 
+.headings h1{
+	font-size: 350%;
+	font-weight:400;
+	font-variant: small-caps;
+	
+}
+
+.headings h2{
+	font-size:200%;
+	font-weight:400;
+	font-variant: small-caps;
+}
 
 img{
 	width: 30%;
@@ -118,11 +156,12 @@ img{
 }
 
 .weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1,.accomodationsfixedbg h1, .galleryfixedbg h1{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 300%;
-	font-weight:100;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 350%;
+	font-weight:600;
+	font-variant: small-caps;
 	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
@@ -314,7 +353,7 @@ a.active {
 
 /*thumbnail images div in gallery*/
 .w3-row-padding{
-	background-color:rgba(0, 0, 51,0.9);
+	background-color: #000000;
 	-webkit-border-radius:1%;
 	border-radius:1%;
 	width: 100%;
