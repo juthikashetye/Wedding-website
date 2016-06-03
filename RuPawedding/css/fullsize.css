@@ -19,8 +19,8 @@ header {
 }
 
 p {
-	font-size:130%;
-	font-family: 'Milonga', cursive;
+	font-size:165%;
+	font-family: "Calibri", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin-left: 5%;
 	margin-right:5%;
 	padding-left:10%;
@@ -67,7 +67,8 @@ footer {
 }
 
 h3 {
-	font-family: 'Lobster Two', cursive;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-variant: small-caps;
 	color: rgba(0, 0, 51,0.9);
 	font-size:185%;
 	padding:2%;
@@ -107,9 +108,9 @@ h3 {
 }
 
 .fixed-bg div{
-	font-family: 'Rye', cursive;
+	font-family: 'Cinzel Decorative', cursive;
 	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
@@ -119,13 +120,14 @@ h3 {
 
 .headings h1{
 	font-size: 400%;
-	font-weight:100;
+	font-weight:600;
 	
 }
 
 .headings h2{
 	font-size:200%;
-	font-weight:100;
+	font-weight:600;
+	font-variant: small-caps;
 	
 }
 
@@ -176,11 +178,11 @@ figure {
 }
 
 .weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1,.accomodationsfixedbg h1, .galleryfixedbg h1{
-	font-family: 'Rye', cursive;
+	font-family: 'Cinzel Decorative', cursive;
 	font-size: 400%;
-	font-weight:100;
+	font-weight:600;
 	color: #FFFFFF;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
@@ -197,7 +199,8 @@ button.accordion {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 125%;
+	font-family: "Calibri","Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 175%;
     transition: 0.4s;
 }
 
