@@ -64,7 +64,39 @@ nav .active {
 
 footer {
 	text-align: center;
+	background-color: rgba(0, 0, 51,0.9);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#FFFFFF;
+	padding-left:0;
+	padding-right:0;
+	padding-top:2%;
+	padding-bottom:2%;
+	margin-top:5%;
+	margin-left:0;
+	margin-right:0;
 }
+
+footer p:first-child {
+	font-size:105%;
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
+
+footer p:last-child {
+	
+	font-size:90%;
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
+
 
 h3 {
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -110,7 +142,7 @@ h3 {
 .fixed-bg div{
 	font-family: 'Cinzel Decorative', cursive;
 	color: #FFFFFF;
-	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
+	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
@@ -182,7 +214,7 @@ figure {
 	font-size: 400%;
 	font-weight:600;
 	color: #FFFFFF;
-	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
+	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
