@@ -1,13 +1,11 @@
 body {
 	text-align:center;
-	background-color: rgb(255, 242, 230); 	
+	background-color: /*rgb(255, 242, 230)*/ #FFFFFF; 	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 	font-size:16px;
-	margin-left:0;
-	margin-right:0;
-	padding-left:0;
-	padding-right:0;
+	margin:0;
+	padding:0;
 }
 
 section {
@@ -19,8 +17,8 @@ header {
 }
 
 p {
-	font-size:165%;
-	font-family: "Calibri", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:150%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin-left: 5%;
 	margin-right:5%;
 	padding-left:10%;
@@ -45,7 +43,8 @@ nav a {
 	font-size:100%;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#FFFFFF;
-	text-align:center;	
+	text-align:center;
+	letter-spacing: 2px;
 }
 
 nav a:hover {
@@ -54,7 +53,7 @@ nav a:hover {
 }
 
 nav .active {
-	background-color: rgb(255, 242, 230);
+	background-color: /*rgb(255, 242, 230)*/ #FFFFFF;
 	color: #000000;
 }
 
@@ -74,6 +73,8 @@ footer {
 	margin-top:5%;
 	margin-left:0;
 	margin-right:0;
+	margin-bottom:0;
+	letter-spacing: 2px;
 }
 
 footer p:first-child {
@@ -104,6 +105,7 @@ h3 {
 	color: rgba(0, 0, 51,0.9);
 	font-size:185%;
 	padding:2%;
+	letter-spacing: 2px;
 }
 
 #aboutus {
@@ -140,9 +142,8 @@ h3 {
 }
 
 .fixed-bg div{
-	font-family: 'Milonga', cursive;
 	color: #FFFFFF;
-	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
+	text-shadow: 0 0 4px #000000,  2px 2px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
@@ -151,15 +152,15 @@ h3 {
 
 
 .headings h1{
-	font-size: 450%;
-	font-weight:400;
+	font-size: 500%;
+	font-weight:100;
 	font-variant: small-caps;
 	
 }
 
 .headings h2{
 	font-size:200%;
-	font-weight:400;
+	font-weight:100;
 	font-variant: small-caps;
 	
 }
@@ -211,12 +212,11 @@ figure {
 }
 
 .weddingfixedbg h1, .rsvpfixedbg h1, .storyfixedbg h1, .giftsfixedbg h1,.accomodationsfixedbg h1, .galleryfixedbg h1{
-	font-family: 'Cinzel Decorative', cursive;
-	font-size: 400%;
-	font-weight:600;
+	font-size: 450%;
+	font-weight:100;
 	font-variant: small-caps;
 	color: #FFFFFF;
-	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
+	text-shadow: 0 0 4px #000000,  2px 2px 4px #000000;
 	letter-spacing: 15px;
 	-webkit-flex: 1; /* Safari 6.1+ */
 	flex: 1;
@@ -225,7 +225,7 @@ figure {
 
 
 button.accordion {
-    background-color: #fce5cd;
+    background-color: /*#fce5cd*/ #a4daf6;
     color: rgb(51, 51, 51);
     cursor: pointer;
     padding: 18px;
@@ -233,13 +233,13 @@ button.accordion {
     border: none;
     text-align: center;
     outline: none;
-	font-family: "Calibri","Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 175%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 145%;
     transition: 0.4s;
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: rgb(255, 221, 153);
+    background-color: /*rgb(255, 221, 153)*/ #7fa9bf;
 }
 
 button.accordion:after {
@@ -266,6 +266,10 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 500px;  
+}
+
+.panel p {
+	font-size: 130%;
 }
 
 

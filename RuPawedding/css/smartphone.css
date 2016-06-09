@@ -2,12 +2,10 @@ body {
 	text-align:center;
 	background-color: rgb(255, 242, 230); 	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 	font-size:16px;
-	margin-left:0;
-	margin-right:0;
-	padding-left:0;
-	padding-right:0;
+	margin:0;
+	padding:0;
 	
 }
 
@@ -27,6 +25,8 @@ footer {
 	margin-top:5%;
 	margin-left:0;
 	margin-right:0;
+	margin-bottom:0;
+	letter-spacing: 2px;
 }
 
 footer p:first-child {
@@ -52,7 +52,7 @@ footer p:last-child {
 
 p {
 	font-size:125%;
-	font-family: "Calibri", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-left:10%;
 	padding-right:10%;
 	
@@ -66,6 +66,7 @@ h3 {
 	color: rgba(0, 0, 51,0.9);
 	font-size:175%;
 	padding:2%;
+	letter-spacing: 2px;
 }
 
 
@@ -106,9 +107,8 @@ h3 {
 
 .fixed-bg div{
 	width:100%;
-	font-family: 'Milonga', cursive;
 	color: #FFFFFF;
-	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
+	text-shadow: 0 0 4px #000000, 2px 2px 4px #000000;
 	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
@@ -116,15 +116,15 @@ h3 {
 }
 
 .headings h1{
-	font-size: 300%;
-	font-weight:400;
+	font-size: 350%;
+	font-weight:100;
 	font-variant: small-caps;
 	
 }
 
 .headings h2{
-	font-size:150%;
-	font-weight:400;
+	font-size:200%;
+	font-weight:100;
 	font-variant: small-caps;
 }
 
@@ -155,12 +155,11 @@ img{
 }
 
  .rsvpfixedbg h1, .storyfixedbg h1,.weddingfixedbg h1, .giftsfixedbg h1, .accomodationsfixedbg h1, .galleryfixedbg h1{
-	font-family: 'Cinzel Decorative', cursive;
-	font-size: 270%;
-	font-weight:600;
+	font-size: 300%;
+	font-weight:100;
 	font-variant: small-caps;
 	color: #FFFFFF;
-	text-shadow: 0 0 4px #000000, 0 0 4px #000000, 3px 3px 4px #000000;
+	text-shadow: 0 0 4px #000000, 2px 2px 4px #000000;
 	letter-spacing: 5px;
 	-webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
@@ -209,6 +208,10 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 500px;  
+}
+
+.panel p {
+	font-size: 120%;
 }
 
 
