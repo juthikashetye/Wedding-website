@@ -22,7 +22,7 @@ footer {
 	padding-right:0;
 	padding-top:2%;
 	padding-bottom:2%;
-	margin-top:5%;
+	margin-top:20%;
 	margin-left:0;
 	margin-right:0;
 	margin-bottom:0;
@@ -86,7 +86,7 @@ h3 {
 	background-image: url("../Images/coverpic2.jpg");
     /*min-height: 500px;*/
 	width:100%;
-	height:500px;
+	height:600px;
     /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
@@ -106,6 +106,7 @@ h3 {
 }
 
 .fixed-bg div{
+	font-family: 'Raleway', sans-serif;
 	width:100%;
 	color: #FFFFFF;
 	text-shadow: 0 0 4px #000000, 2px 2px 4px #000000;
@@ -116,15 +117,15 @@ h3 {
 }
 
 .headings h1{
-	font-size: 350%;
-	font-weight:100;
+	font-size: 450%;
+	font-weight:300;
 	font-variant: small-caps;
 	
 }
 
 .headings h2{
 	font-size:200%;
-	font-weight:100;
+	font-weight:300;
 	font-variant: small-caps;
 }
 
@@ -138,7 +139,7 @@ img{
 	background-color: rgba(0, 0, 51,0.9);
 	background-image: url("../Images/rupapic5.jpg");
 	width:100%;
-	height:200px;
+	height:300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,8 +156,9 @@ img{
 }
 
  .rsvpfixedbg h1, .storyfixedbg h1,.weddingfixedbg h1, .giftsfixedbg h1, .accomodationsfixedbg h1, .galleryfixedbg h1{
-	font-size: 300%;
-	font-weight:100;
+	font-family: 'Raleway', sans-serif;
+	font-size: 400%;
+	font-weight:300;
 	font-variant: small-caps;
 	color: #FFFFFF;
 	text-shadow: 0 0 4px #000000, 2px 2px 4px #000000;
@@ -206,8 +208,11 @@ div.panel {
 }
 
 div.panel.show {
+   display: block !important;
     opacity: 1;
-    max-height: 500px;  
+	height:auto;
+    min-height: 300px; 
+	overflow:auto; 
 }
 
 .panel p {
@@ -329,8 +334,6 @@ a.active {
 	animation-duration: 1.5s;
 	display:none;
 	display:block;
-	-webkit-border-radius:5%;
-	border-radius:5%;
 }
 
 @-webkit-keyframes fade {
@@ -402,5 +405,17 @@ a.active {
 	box-shadow:0 4px 8px 0 rgba(255, 242, 230,0.2),0 6px 20px 0 rgba(255, 242, 230,0.19)!important;
 }
 
+.eventsfixedbg a, .panel a{
+	text-decoration:none;
+	padding:2%;
+	border: 1px solid #000000;
+	border-radius:5%;
+	color: #000000;
+}
+
+.eventsfixedbg a:hover, .panel a:hover {
+	background-color: rgba(0, 0, 51,0.9);
+	color:#FFFFFF;
+}
 
 
