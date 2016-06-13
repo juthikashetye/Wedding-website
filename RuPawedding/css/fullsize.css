@@ -1,7 +1,7 @@
 body {
 	text-align:center;
-	background-color:#FFF5C0; 
-	color: #bc5a45;
+	background-color: #C6FDC6; 
+	color: #3D1F00;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size:16px;
 	margin:0;
@@ -31,7 +31,7 @@ nav {
 	position:fixed;
 	top:0;
 	width:100%;
-	background-color: #50394c;
+	background-color: #000000;
 	margin-top:0;
 	z-index:2;
 }
@@ -48,12 +48,12 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #E5BB9D;
+	background-color: #B3B3B3;
 	color: #000000;
 }
 
 nav .active {
-	background-color:  #FFF5C0;
+	background-color:  #C6FDC6;
 	color: #000000;
 }
 
@@ -63,7 +63,7 @@ nav .active {
 
 footer {
 	text-align: center;
-	background-color:  #50394c;
+	background-color: #000000;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#FFFFFF;
 	padding-left:0;
@@ -102,7 +102,7 @@ footer p:last-child {
 h3 {
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-variant: small-caps;
-	color:  #50394c;
+	color:  #000000;
 	font-size:195%;
 	padding:2%;
 	letter-spacing: 2px;
@@ -227,7 +227,7 @@ figure {
 
 
 button.accordion {
-    background-color:  #F2D9B8;
+    background-color: 	#d3d3d3;
     color: rgb(51, 51, 51);
     cursor: pointer;
     padding: 18px;
@@ -241,7 +241,7 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color:  #E5BB9D;
+    background-color:  #B3B3B3;
 }
 
 button.accordion:after {
