@@ -1,7 +1,7 @@
 body {
 	text-align:center;
-	background-color: #C6FDC6; 
-	color: #3D1F00;
+	background-color: #C4F7D0; 
+	color: #464646;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size:16px;
 	margin:0;
@@ -31,7 +31,7 @@ nav {
 	position:fixed;
 	top:0;
 	width:100%;
-	background-color: #000000;
+	background-color: #464646;
 	margin-top:0;
 	z-index:2;
 }
@@ -53,7 +53,7 @@ nav a:hover {
 }
 
 nav .active {
-	background-color:  #C6FDC6;
+	background-color:  #C4F7D0;
 	color: #000000;
 }
 
@@ -63,7 +63,7 @@ nav .active {
 
 footer {
 	text-align: center;
-	background-color: #000000;
+	background-color: #464646;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#FFFFFF;
 	padding-left:0;
