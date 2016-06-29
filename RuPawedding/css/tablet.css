@@ -1,9 +1,10 @@
 body {
 	text-align:center;
 	background: #FFD1D1;
-	background: -webkit-linear-gradient(to right,#FFD1D1,#E3E3FF, #FFFFC7);
-	background: -moz-linear-gradient(to right, #FFD1D1,#E3E3FF, #FFFFC7);
-	background: linear-gradient(to right, #FFD1D1,#E3E3FF, #FFFFC7);
+	background-image: url("../Images/sunriseoceanedit.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
 	color: #002800;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size:16px;
