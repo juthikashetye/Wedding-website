@@ -1,9 +1,9 @@
 body {
 	text-align:center;
-	background: #FFD1D1;
-	background: linear-gradient(rgba( 56,28,0,0.2),  rgba( 56,28,0,0.2)),url("../Images/decorative.jpg");
-	background-repeat: repeat;
-    background-size: 150px, 100px;
+	background: rgb(218,237,244);
+ 	background: -webkit-linear-gradient(to right,#b7e9fa, #f6f1d3);
+ 	background: -moz-linear-gradient(to right, #b7e9fa, #f6f1d3);
+ 	background: linear-gradient(to right, #b7e9fa, #f6f1d3);
 	background-position: center;
 	color: #002800;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
