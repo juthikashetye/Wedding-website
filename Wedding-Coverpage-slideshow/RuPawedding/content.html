@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parul & Rutwik</title>
+	<link rel = "icon" type = "image/png" href = "Images/hearts.png"/>
+	<!--For forcing browsers to tell the actual device width of the user-->
+	<meta name = "viewport" content= "width=device-width, , initial-scale=1">
+	
+	<!--Bootstrap CDN-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+	<link rel = "stylesheet" type="text/css" href="css/fullsize.css" media="only screen and (min-width:1025px)"/>
+	<link rel = "stylesheet" type="text/css" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:1024px)"/>
+	<link rel = "stylesheet" type="text/css" href="css/smartphone.css" media="only screen and (max-width:480px)"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Teko:500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-xs navbar-custom navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<a class="navbar-brand" href="index.html">Parul & Rutwik</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#story">Our Story</a></li>
+				<li><a href="#wedding">Wedding Events</a></li>
+				<li><a href="#accomodations">Accomodations</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#rsvp">RSVP</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a,a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1000, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+
+	// For automatically closing navbar in small-screens after clicking on the link in navbar //
+//$(document).on('click','.navbar-collapse.in', function(e) {//
+  //  if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {//
+        //$(this).collapse('hide');//
+    //}//
+//});//
+
+
+// For automatically closing the navbar, closing it by clicking outside the navbar and closing it by clicking on navbar-brand link //
+$(document).on('click', function(event){
+  var $clickedOn = $(event.target),
+      $collapsableItems = $('.collapse'),
+      isToggleButton = ($clickedOn.closest('.navbar-toggle').length == 1),
+      isLink = ($clickedOn.closest('a').length == 1),
+      isOutsideNavbar = ($clickedOn.parents('.navbar').length == 0);
+
+  if( (!isToggleButton && isLink) || isOutsideNavbar ) {
+    $collapsableItems.each(function(){
+      $(this).collapse('hide');
+    });
+  }
+});
+
+
+</script>
+
+
+
+
+<a href="#myPage" title="To Top"  class="totop">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+	</a>
+<section id="story">
+	<div  class="storyfixedbg">
+	
+		<h1>Our Story</h1>
+	</div>
+	
+	<p>Nobody had the slightest idea what it would be like, when it all started...Parul, was too excited to start working in Bangalore. Rutwik wasn't very eager to leave home in Mumbai and start working yet. Unaware of the other, both finally met in Accenture at Bangalore.<p>
+	<p>Rutwik was smitten from the start, but for first few months reserved himself to the fact that she was out of his league. They stayed friends during this time which was filled with lots of laughter, fun, house parties, games and travel. And as the friendship grew, they knew it was also...love.<p>
+	<p>Over the past 3 years, they have pushed each other to be their best, challenged each other on almost everything (sometimes just for the heck of it) and learned to love through it all. Now they can't wait to spend the rest of their lives together.</p>
+	</section>
+
+<section  id="wedding" >
+<div class="weddingfixedbg"> 
+	
+	<h1>Wedding Events</h1>
+</div>
+
+<h3> Pre-wedding Events </h3>
+<button class="accordion">Mehendi</button>
+	<div class="panel">
+		<p>THURSDAY, DECEMBER 22, 2016<br>
+	9.30 AM onwards</p><br>
+
+	<p>PARUL'S HOME<br>
+	P1, DLF Phase 2,<br>
+	Sector 25,<br>
+	Gurgaon-122002</p><br>
+	
+	<a target = "_blank" href = "https://goo.gl/maps/83UhGTCHTPm" title = "Click for location"> VIEW MAP </a>
+	</div>
+
+<button class="accordion">Engagement & Sangeet</button>
+	<div class="panel">
+		<p>FRIDAY, DECEMBER 23, 2016<br>
+	7.00 PM onwards</p><br>
+
+	<p>PARK PLAZA<br>
+	B Block, Sushant Lok,<br>
+	Phase 1,<br>
+	Gurgaon-122002</p><br>
+	
+	<a target = "_blank" href = "https://goo.gl/maps/fAvsMieHX9u" title = "Click for location"> VIEW MAP </a>
+	</div>
+	
+
+<h3> Wedding Day </h3>
+
+<button class="accordion">Haldi</button>
+	<div class="panel">
+		<p>SATURDAY, DECEMBER 24, 2016<br>
+	9.30 AM onwards</p><br>
+
+	<p>PARUL'S HOME<br>
+	P1, DLF Phase 2,<br>
+	Sector 25,<br>
+	Gurgaon-122002</p><br>
+	
+	<a target = "_blank" href = "https://goo.gl/maps/83UhGTCHTPm" title = "Click for location"> VIEW MAP </a>
+	</div>
+
+<button class="accordion">Wedding Ceremony</button>
+	<div class="panel">
+		<p>SATURDAY, DECEMBER 24, 2016<br>
+	7.30 PM onwards</p><br>
+
+	<p>PALMS COUNTRY CLUB<br>
+	B Block, Sushant Lok,<br>
+	Phase 1,<br>
+	Gurgaon-122002</p><br>
+	
+	<a target = "_blank" href = "https://goo.gl/maps/ZefdhU4reX22" title = "Click for location"> VIEW MAP </a>
+	</div>
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+</section>
+
+
+<section  id="reception">
+<div class="eventsfixedbg"> 
+	<h3>Reception</h3>
+	<p>WEDNESDAY, DECEMBER 28, 2016<br>
+	7:00 - 10:00 PM</p><br>
+
+	<p>PRESIDENTIAL HALL<br>
+	Khar Gymkhana,<br>
+	13th Road (Entry from 15th Rd.),<br> 
+	Khar West,<br>
+	Mumbai-400052</p><br>
+	
+	<a target = "_blank" href = "https://goo.gl/maps/kVNGZTJj5x12" title = "Click for location"> VIEW MAP </a>
+</div>
+</section>
+
+<section id="accomodations" >
+<div  class="accomodationsfixedbg">
+	
+	<h1> Stay Warm</h1>
+	
+</div>
+<p>We are booking rooms for our guests in the following hotels near the wedding and reception venues.</p>
+
+<h3>Name of Hotel</h3>
+<p> (Address of hotel)</p>
+
+<h3>Name of Hotel</h3>
+<p> (Address of hotel)</p>
+<br>
+<p>Your reservation details will be sent on the contact information provided by you in the RSVP form. If you don't receive the details by the 15th of December, then please remind us.</p>
+
+
+</section>
+
+<section id="gallery" >
+<div class="galleryfixedbg"> 
+
+<h1> Gallery </h1>
+</div>
+
+<section>
+<p>A story is never complete without some pictures. </p>
+<p>Savor the moments that are warm, special and giggly!</p>
+
+</section>
+<div class="w3-content" >
+
+<div class="slideshow-container">
+  <img class="mySlides" src="Images/pic5resize50.jpg" alt="image1" style="width:100%">
+  <img class="mySlides" src="Images/pic3resize50.jpg" alt="image2" style="width:100%">
+  <img class="mySlides" src="Images/pic8resize50.jpg" alt="image3" style="width:100%">
+  <img class="mySlides" src="Images/pic9resize50.jpg" alt="image4" style="width:100%">
+  <img class="mySlides" src="Images/pic10resize50.jpg" alt="image5" style="width:100%">
+   <img class="mySlides" src="Images/coverpic4.jpg" alt="image6" style="width:100%">
+  <img class="mySlides" src="Images/pic14resize50.jpg" alt="image7" style="width:100%">
+  <img class="mySlides" src="Images/coverpic8.jpg" alt="image8" style="width:100%">
+  <img class="mySlides" src="Images/pic12.jpg" alt="image9" style="width:100%">
+  <img class="mySlides" src="Images/coverpic13.jpg" alt="image10" style="width:100%">
+  <img class="mySlides" src="Images/pic13edit3.jpg" alt="image10" style="width:100%">
+<a class="prev" onclick="plusDivs(-1)">❮</a>
+<a class="next" onclick="plusDivs(1)">❯</a>
+
+</div>
+
+<div class="w3-row-padding w3-section">
+    
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic5thumb.jpg" alt="image1" style="width:10.33%" onclick="currentDiv(1)">
+    
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic3thumb.jpg" alt="image2" style="width:10.33%" onclick="currentDiv(2)">
+   
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic8thumb.jpg" alt="image3" style="width:10.33%" onclick="currentDiv(3)">
+   
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic9thumb.jpg" alt="image4" style="width:10.33%" onclick="currentDiv(4)">
+   
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic10thumb.jpg" alt="image5" style="width:10.33%" onclick="currentDiv(5)">
+   
+      <img class="demo w3-border w3-hover-shadow" src="Images/coverpic4thumb.jpg" alt="image6" style="width:10.33%" onclick="currentDiv(6)">
+   
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic14thumb.jpg" alt="image7" style="width:10.33%" onclick="currentDiv(7)">
+    
+      <img class="demo w3-border w3-hover-shadow" src="Images/coverpic8thumb.jpg" alt="image8" style="width:10.33%" onclick="currentDiv(8)">
+    
+      <img class="demo w3-border w3-hover-shadow" src="Images/pic12thumb.jpg" alt="image9" style="width:10.33%" onclick="currentDiv(9)">
+   
+      <img class="demo w3-border w3-hover-shadow" src="Images/coverpic13thumb.jpg" alt="image10" style="width:10.33%" onclick="currentDiv(10)">
+	  
+	  <img class="demo w3-border w3-hover-shadow" src="Images/pic13edit3thumb.jpg" alt="image11" style="width:10.33%" onclick="currentDiv(11)">
+    
+  </div>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace("w3-border-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-border-red";
+}
+</script>
+
+
+</section>
+
+<section id="rsvp" >
+<div class="rsvpfixedbg"> 
+
+<h1> RSVP </h1>
+</div>
+ <p> We are so excited and looking forward to celebrate with you!</p>
+ <p> Please respond on or before December 5, 2016 so that there is no last minute confusion. </p>
+ <p> In the form below there are RSVPs for all the wedding events and also a section for your hotel room reservation. If you cannot make it to all the functions :( then please just RSVP to the events that you will be attending (i.e. no need to reply to all the other questions / RSVP's below). </p>
+ <p> And please remember to continue ahead and click the 'Submit' button at the very end of the form so that we receive your response.</p>
+
+
+<iframe src="https://docs.google.com/forms/d/1L7SwgCEMK8G3cf10c2WRqbEApSEk_j9C94cGX38bYl0/viewform?embedded=true" width="100%" height="1350" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+
+</section>
+
+
+
+<footer>
+	<br>
+	<p> <span class="fa fa-envelope-o"></span> rutwikparul@gmail.com </p>
+	<p> <i class="fa fa-phone" aria-hidden="true"></i> Rutwik: +91 9742088108<br>
+		<i class="fa fa-phone" aria-hidden="true"></i> Parul: +91 9742506570</p>
+	<br>
+	<br>
+	<br>
+	
+	<p> Designed by Juthika Shetye<br>
+		All rights reserved</p>
+</footer>
+
+</body>
+</html>
